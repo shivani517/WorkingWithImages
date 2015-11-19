@@ -2,12 +2,16 @@ PImage dog;
 
 
 
-void setup(){
-  size(800,600);
+void setup() {
+  size(500, 333);
   dog= loadImage("puppies.jpg");
- 
+  imageMode(CENTER);
+   background(0);
 }
 
-void draw(){
-  image(dog,random(width),random(0,height));
+void draw() {
+ 
+  fill(dog.get(mouseX, mouseY));
+  image(dog, width/2, height/2);
+  ellipse(mouseX, mouseY, 20, 20);
 }
