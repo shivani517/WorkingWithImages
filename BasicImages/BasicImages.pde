@@ -10,9 +10,7 @@ void setup() {
 }
 
 void draw() {
-  filter(BLUR);
-  fill(dog.get(mouseX, mouseY));
+   fill(dog.get(mouseX, mouseY));
   image(dog, width/2, height/2);
   ellipse(mouseX, mouseY, 20, 20);
-  filter(POSTERIZE,9);
 }
